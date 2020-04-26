@@ -14,8 +14,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.1'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.1'
+    compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
     testRuntime 'com.athaydes:spock-reports:1.2.7'

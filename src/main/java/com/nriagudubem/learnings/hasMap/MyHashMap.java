@@ -1,4 +1,6 @@
-package com.nriagudubem.learnings;
+package com.nriagudubem.learnings.hasMap;
+
+import com.nriagudubem.learnings.hasMap.MyEntry;
 
 import java.lang.reflect.Array;
 
@@ -16,6 +18,9 @@ public class MyHashMap<K, V> {
     }
 
     public void put(K key, V value) {
+        if (key == null || value == null) {
+            throw new IllegalArgumentException("Map key or value cannot be null");
+        }
         int index = getIndex(key);
         if (myEntries[index] == null) {
             myEntries[index] = new MyEntry<K, V>(key, value, null);
@@ -29,6 +34,9 @@ public class MyHashMap<K, V> {
     }
 
     public V get(K key) {
+        if (key == null) {
+            throw new IllegalArgumentException("Map key cannot be null");
+        }
         int index = getIndex(key);
         MyEntry<K, V> entry = myEntries[index];
 

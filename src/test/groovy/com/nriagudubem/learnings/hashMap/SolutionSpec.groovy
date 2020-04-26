@@ -1,16 +1,11 @@
-package com.nriagudubem.learnings
+package com.nriagudubem.learnings.hashMap
 
+import com.nriagudubem.learnings.hasMap.CustomKey
+import com.nriagudubem.learnings.hasMap.MyHashMap
 import spock.lang.Shared
 import spock.lang.Specification
 
 class SolutionSpec extends Specification {
-
-    @Shared
-    private Solution solution
-
-    void setupSpec() {
-        solution = new Solution()
-    }
 
     def "when there is no collision"() {
         given:
@@ -38,6 +33,19 @@ class SolutionSpec extends Specification {
         then:
         String nonExistent = map.get(25);
         assert nonExistent == null
+    }
+
+    def "test map gets an illegalArgumentException when a null value is passed"() {
+        given:
+        MyHashMap<Integer, String> map = new MyHashMap<>();
+
+        when:
+        Integer name = null;
+        String value = "Gilbert";
+        map.put(name, value)
+
+        then:
+        thrown(IllegalArgumentException)
     }
 
     def "when collision occurs"() {

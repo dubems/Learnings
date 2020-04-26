@@ -1,4 +1,4 @@
-package com.nriagudubem.learnings;
+package com.nriagudubem.learnings.hasMap;
 
 public class MyEntry<K, V> {
 
