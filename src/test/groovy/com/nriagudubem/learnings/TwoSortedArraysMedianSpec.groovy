@@ -1,4 +1,4 @@
-package com.nriagudubem.learnings.hashMap
+package com.nriagudubem.learnings
 
 import com.nriagudubem.learnings.TwoSortedArraysMedian
 import spock.lang.Specification

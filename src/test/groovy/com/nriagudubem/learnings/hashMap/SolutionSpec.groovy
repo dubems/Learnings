@@ -2,7 +2,6 @@ package com.nriagudubem.learnings.hashMap
 
 import com.nriagudubem.learnings.hasMap.CustomKey
 import com.nriagudubem.learnings.hasMap.MyHashMap
-import spock.lang.Shared
 import spock.lang.Specification
 
 class SolutionSpec extends Specification {

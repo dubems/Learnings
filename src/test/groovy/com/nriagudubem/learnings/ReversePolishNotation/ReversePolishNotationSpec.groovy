@@ -1,4 +1,4 @@
-package com.nriagudubem.learnings.hashMap.ReversePolishNotation
+package com.nriagudubem.learnings.ReversePolishNotation
 
 import com.nriagudubem.learnings.ReversePolishNotation.ReversePolishNotation
 import spock.lang.Shared

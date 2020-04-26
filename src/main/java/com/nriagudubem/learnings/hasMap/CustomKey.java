@@ -4,12 +4,12 @@ public class CustomKey {
 
     private Integer key;
 
-    CustomKey(Integer key){
+    public CustomKey(Integer key) {
         this.key = key;
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 1;
     }
 }
